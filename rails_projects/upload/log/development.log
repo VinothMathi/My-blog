@@ -1,0 +1,110 @@
+
+
+Processing UploadController#index (for 127.0.0.1 at 2013-12-26 14:53:41) [GET]
+Rendering app/views/upload/uploadfile.html.erb
+
+ActionView::MissingTemplate (Missing template app/views/upload/uploadfile.html.erb in view path app/views):
+  app/controllers/upload_controller.rb:3:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UploadController#index (for 127.0.0.1 at 2013-12-26 14:53:48) [GET]
+Rendering app/views/upload/uploadfile.html.erb
+
+ActionView::MissingTemplate (Missing template app/views/upload/uploadfile.html.erb in view path app/views):
+  app/controllers/upload_controller.rb:3:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UploadController#index (for 127.0.0.1 at 2013-12-26 14:54:26) [GET]
+Rendering app/views/upload/uploadfile.html.erb
+
+ActionView::MissingTemplate (Missing template app/views/upload/uploadfile.html.erb in view path app/views):
+  app/controllers/upload_controller.rb:3:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UploadController#index (for 127.0.0.1 at 2013-12-26 14:56:39) [GET]
+Rendering app/views/upload/uploadfile.html.erb
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/upload/index]
+
+
+Processing UploadController#uploadFile (for 127.0.0.1 at 2013-12-26 14:56:47) [POST]
+  Parameters: {"authenticity_token"=>"IbGRCy9OXNvfiymaLHqViwIDXTlQpYVDwS1KZeR+S2A=", "commit"=>"Upload", "upload"=>{"datafile"=>#<File:/tmp/RackMultipart20131226-23999-db28jb-0>}}
+
+Errno::ENOENT (No such file or directory - public/data/Attendance Report (10z361).jpg):
+  app/models/data_file.rb:6:in `initialize'
+  app/models/data_file.rb:6:in `open'
+  app/models/data_file.rb:6:in `save'
+  app/controllers/upload_controller.rb:6:in `uploadFile'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (22.4ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UploadController#uploadFile (for 127.0.0.1 at 2013-12-26 15:04:44) [POST]
+  Parameters: {"authenticity_token"=>"IbGRCy9OXNvfiymaLHqViwIDXTlQpYVDwS1KZeR+S2A=", "commit"=>"Upload", "upload"=>{"datafile"=>#<File:/tmp/RackMultipart20131226-23999-b10cmo-0>}}
+
+Errno::ENOENT (No such file or directory - public/data/Attendance Report (10z361).jpg):
+  app/models/data_file.rb:6:in `initialize'
+  app/models/data_file.rb:6:in `open'
+  app/models/data_file.rb:6:in `save'
+  app/controllers/upload_controller.rb:6:in `uploadFile'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (20.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
