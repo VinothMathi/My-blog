@@ -1,0 +1,24 @@
+<h1>Welcome to my blogg</h1>
+<p>
+    <%= link_to "New Post",new_post_path %>
+  </p>
+
+<% @posts.each do |post| %>
+  <h2><%= link_to post.title, post %></h2>
+  <p>
+  <b>  <%= post.name %></b>
+  </p>
+  <p>
+    <%= time_ago_in_words post.created_at %>
+  </p>
+
+  <p>
+    <%= post.body %>
+  </p>
+  <% end %>
+  
+  
+  
+  
+
+
