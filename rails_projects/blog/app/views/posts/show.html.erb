@@ -12,7 +12,25 @@
   <b>Body:</b>
   <%=h @post.body %>
 </p>
-
-
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>
+
+<% for comment in @post.comments %>
+ 
+ <%= form_tag :action => "comment", :id => @post %>
+
+  <p>
+  <%= f.label :name %><br />
+  <%= f.text_field :name %>
+  </p>
+ 
+  <p>
+    <%= f.label :body %><br />
+    <%= f.text_area :body %>
+  </p>
+ 
+  <p>
+    <%= submit_tag "Post Comment" %>
+  </p>
+</form>
+<% end %>
